@@ -30,6 +30,7 @@ main_profile_deposit.add(inbutton('Crypto Bot', 'deposit_rub'), inbutton('TON', 
 
 main_profile_outmoney = types.InlineKeyboardMarkup(row_width=2)
 main_profile_outmoney.add(inbutton('TON', 'ton'))
+main_profile_outmoney.add(inbutton('Card', 'rub'))
 main_profile_outmoney.add(inbutton('🔙 Вернуться', 'back_profile'))
 
 
