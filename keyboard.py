@@ -14,7 +14,6 @@ bbtn = inbutton('🔙 Вернуться', 'back')
 main = types.ReplyKeyboardMarkup(row_width=2, resize_keyboard=True)
 main.add(button('🔍 Поиск пользователя'), button('🤝 Активные сделки'))
 main.add(button('🎓 Мой профиль'), button('🚀 Помощь'))
-main.add(button('⭐️ Список проверенных продавцов'))
 
 main_search = types.InlineKeyboardMarkup(row_width=1)
 main_search.add(inbutton('🛰 Отзывы', 'otzivi'))
@@ -27,11 +26,10 @@ main_profile.add(inbutton('↪️ Пополнить', 'deposit'), inbutton('↩
 main_profile.add(inbutton('📲 Указать линк на форуме', 'set_link'))
 
 main_profile_deposit = types.InlineKeyboardMarkup(row_width=2)
-main_profile_deposit.add(inbutton('QIWI/CARD', 'deposit_rub'), inbutton('BITCOIN', 'btc'))
+main_profile_deposit.add(inbutton('Crypto Bot', 'deposit_rub'), inbutton('TON', 'ton'))
 
 main_profile_outmoney = types.InlineKeyboardMarkup(row_width=2)
-main_profile_outmoney.add(inbutton('🥝 QIWI', 'outmoney_qiwi'), inbutton('💳 CARD', 'outmoney_card'))
-main_profile_outmoney.add(inbutton('BITCOIN', 'btc'))
+main_profile_outmoney.add(inbutton('TON', 'ton'))
 main_profile_outmoney.add(inbutton('🔙 Вернуться', 'back_profile'))
 
 
