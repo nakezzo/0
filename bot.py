@@ -99,18 +99,16 @@ def admin_handler(message):
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
 🤖 *Ваш ID* - `{message.chat.id}`
-🛸 *Ваш линк на форуме:
-🌎 {link}*
 
 *Ваш баланс:* {balance} RUB
-*Ваш баланс BTC:* 0.0 BTC (~0.0 RUB)
+*Ваш баланс TON:* 0.0 TON (~0.0 RUB)
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 🎁 *Кол-во продаж:* 0 шт
 🛒 *Кол-во покупок:* 0 шт
-📥 *Сумма продаж:* 0 RUB | 0 BTC (~0 RUB)
-📤 *Сумма покупок:* 0 RUB | 0 BTC (~0 RUB)
+📥 *Сумма продаж:* 0 RUB | 0 TON (~0 RUB)
+📤 *Сумма покупок:* 0 RUB | 0 TON (~0 RUB)
 
-🚀 *Наш курс BTC:* `7 079 853,34` RUB''', reply_markup=k.main_profile, parse_mode='Markdown')
+🚀 *Наш курс TON:* `280` RUB''', reply_markup=k.main_profile, parse_mode='Markdown')
 		elif message.text == '🚀 Помощь':
 			bot.send_message(message.chat.id, '❕ _Познавательная вкладка_', reply_markup=k.main_help, parse_mode='Markdown')
 
@@ -445,14 +443,14 @@ _ВАЖНО:_
 🌎 {link}*
 
 *Ваш баланс:* {balance} RUB
-*Ваш баланс BTC:* 0.0 BTC (~0.0 RUB)
+*Ваш баланс TON:* 0.0 TON (~0.0 RUB)
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 🎁 *Кол-во продаж:* 0 шт
 🛒 *Кол-во покупок:* 0 шт
-📥 *Сумма продаж:* 0 RUB | 0 BTC (~0 RUB)
-📤 *Сумма покупок:* 0 RUB | 0 BTC (~0 RUB)
+📥 *Сумма продаж:* 0 RUB | 0 TON (~0 RUB)
+📤 *Сумма покупок:* 0 RUB | 0 TON (~0 RUB)
 
-🚀 *Наш курс BTC:* `7079853,34` RUB''', reply_markup=k.main_profile, parse_mode='Markdown')
+🚀 *Наш курс TON:* `280` RUB''', reply_markup=k.main_profile, parse_mode='Markdown')
 
 
 def search(message):
@@ -470,8 +468,8 @@ def search(message):
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 🎁 *Кол-во продаж:* 0 шт
 🛒 *Кол-во покупок:* 0 шт
-📥 *Сумма продаж:* 0.0 RUB | 0 BTC (~0 RUB)
-📤 *Сумма покупок:* 0 RUB | 0 BTC (~0 RUB)''', parse_mode='Markdown', reply_markup=k.main_search.add(inbutton('🚀 Начать сделку', 'new_sdelka-' + str(userid))))
+📥 *Сумма продаж:* 0.0 RUB | 0 TON (~0 RUB)
+📤 *Сумма покупок:* 0 RUB | 0 TON (~0 RUB)''', parse_mode='Markdown', reply_markup=k.main_search.add(inbutton('🚀 Начать сделку', 'new_sdelka-' + str(userid))))
 
 	except Exception as e:
 		print(e)
