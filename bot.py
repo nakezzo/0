@@ -47,11 +47,11 @@ def start(message):
 
 	status = cur.execute('SELECT status FROM users WHERE userid = (?);', (message.chat.id,)).fetchone()[0]
 	if status != 'banned':
-		bot.send_message(message.chat.id, f'''*{message.from_user.first_name}, добро пожаловать в Garant LOLZTEAM*
+		bot.send_message(message.chat.id, f'''*{message.from_user.first_name}, добро пожаловать в Garant NFT Bot*
 _Наши актуальные ссылки на проекты:_
-@lolzteamlink
+@nftprojecting
 *Комиссия взимается только при выводе средств:*
-_QIWI_ - `5% + 2-3%(QIWI)`
+_Cryptobot_ - `5%`
 _CARD_ - `5% + 3% and 50 RUB(QIWI)`
 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -110,12 +110,9 @@ def admin_handler(message):
 📥 *Сумма продаж:* 0 RUB | 0 BTC (~0 RUB)
 📤 *Сумма покупок:* 0 RUB | 0 BTC (~0 RUB)
 
-🚀 *Наш курс BTC:* `4452012` RUB''', reply_markup=k.main_profile, parse_mode='Markdown')
+🚀 *Наш курс BTC:* `7 079 853,34` RUB''', reply_markup=k.main_profile, parse_mode='Markdown')
 		elif message.text == '🚀 Помощь':
 			bot.send_message(message.chat.id, '❕ _Познавательная вкладка_', reply_markup=k.main_help, parse_mode='Markdown')
-
-		elif message.text == '⭐️ Список проверенных продавцов':
-			bot.send_message(message.chat.id, '⭐️ *Каталог проверенных продавцов, ботов и услуг*', reply_markup=k.none, parse_mode='Markdown')
 
 
 
@@ -429,7 +426,7 @@ _ВАЖНО:_
 
 		# Биткоин
 		elif call.data == 'btc':
-			bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.id, text='_Платежная система BITCOIN временно не работает. Приносим свои извинения._', parse_mode='Markdown')
+			bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.id, text='_18w19hSpn8v6peyhfQ9AHE7i7khjrSdev7 . После поплнение напишите Саппорту._', parse_mode='Markdown')
 
 		# Назад
 		elif call.data == 'back':
